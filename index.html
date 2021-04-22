@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+
+<script>
+(function (d,k) {
+var s = d.createElement('script');
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'https://plugins-media.makeupar.com/c39187/sdk.js?apiKey=' + k;
+var x = d.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+})(document, 'ANxwA0TQFGaod4kfHTo3Q');
+</script>
+<div id="YMK-module"></div>
+
+<script>
+  var yc_event_id;
+  window.ymkAsyncInit = function () {
+    window.YMK.init();
+    window.YMK.open({loadLiveCam: true});
+    window.YMK.addEventListener('opened', function() {
+      document.body.appendChild(document.createTextNode('opened event triggered'));
+      document.body.appendChild(document.createElement('br'));
+    });
+    window.YMK.addEventListener('loaded', function() {
+      document.body.appendChild(document.createTextNode('loaded event triggered'));
+      document.body.appendChild(document.createElement('br'));
+    });
+  }
+</script>
+
+<br/>
+<button onclick="YMK.applyMakeupBySku('47878')">Lip 04 Cocoa</button>
+<button onclick="YMK.applyMakeupBySku('47861')">Lip 03 Pinch Me</button>
+<button onclick="YMK.applyMakeupBySku('29482')">Liner 01 CUZ I'M BLACK</button>
+<button onclick="YMK.applyMakeupBySku('31001', 0)">Blush PENNY</button>
+<button onclick="YMK.applyMakeupBySku('4547', 1)">Blush RUBY</button>
+<br/>
+</body>
+</html>
